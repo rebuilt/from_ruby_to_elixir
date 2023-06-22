@@ -5,7 +5,7 @@ defmodule Examples.Structs.Sms do
   def other_party(sms) do
     case sms.status do
       "delivered" -> sms.to
-      "recieved" -> sms.from
+      "received" -> sms.from
     end
   end
 end
