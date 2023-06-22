@@ -10,4 +10,8 @@ defmodule Examples.Structs.Conversation do
     new_messages = conversation.messages ++ [sms]
     Map.put(conversation, :messages, new_messages)
   end
+
+  def clear(conversation) do
+    Map.put(conversation, :messages, [])
+  end
 end
